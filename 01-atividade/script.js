@@ -1,4 +1,11 @@
-// Exercíco 1  Bolo de Pote (Cálculo de Lucro)
+/*Exercíco 1  Bolo de Pote (Cálculo de Lucro)
+Uma empreendedora vende bolo de pote por R$ 12,00 cada.
+O custo de produção por unidade é R$ 5,50.
+Se ela vendeu 30 unidades, calcule:
+• O lucro por unidade
+• O lucro total
+Exiba o resultado utilizando concatenação, declarando variáveis e constantes e 
+adicionando comentários no código. */
 
 // definindo valores
 let precoVenda = 12.00; 
@@ -17,7 +24,14 @@ console.log(`Lucro por unidade: R$ ${lucroUnitario.toFixed(2)}`)
 console.log(`Quantidade vendida: R$ ${quantidadeVendida} unidades`)
 console.log(`Lucro total: R$ ${lucroTotal.toFixed(2)}`)
 
+
 // Exercício 2 Confeitaria (Desconto)
+/* Uma confeitaria vende um bolo por R$ 150,00.
+Um cliente recebeu 10% de desconto.
+Calcule:
+• O valor do desconto
+• O valor final do bolo
+Mostre o resultado utilizando interpolação. */
 
 // definindo valores
 let valorBolo = 150;
@@ -58,4 +72,4 @@ let quantidadeSessoes = 40;
 
 let faturamento = valorSessao * quantidadeSessoes;
 
-console.log("\nO faturamento mensal é R$ " + faturamento.toFixed(2));
+console.log("O faturamento mensal é R$ " + faturamento.toFixed(2));
