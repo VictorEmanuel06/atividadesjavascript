@@ -149,6 +149,3 @@ const terapeuta = {
 //Desestruturando os valoes do objeto
 const [nome, especialidade, cidade]= Object.values(terapeuta);
 console.log(nome, especialidade, cidade);
-
-
-const nomes = "victor";
