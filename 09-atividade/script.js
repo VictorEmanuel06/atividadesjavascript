@@ -49,6 +49,50 @@ filtrarSaboresDisponiveis(
 );
 
 
+/*Exercício 5 – Psicólogo
+• Crie um JSON válido para representar o cadastro de um paciente, contendo: 
+nome completo, idade, plano de saúde (booleano indicando se possui), lista de 
+queixas principais (array de strings), e um objeto com dados da última sessão (data 
+em ISO, escala de humor de 1 a 10 e se houve prescrição de atividade).*/
+
+
+let cadastroPaciente = `{
+  "nomeCompleto": "Rodrigo Gomes",
+  "idade": 25,
+  "possuiPlanoSaude": false,
+  "queixasPrincipais": ["Autoestima", "Ansiedade"],
+  "ultimaSessao": {
+    "data": "2026-01-10",
+    "escalaHumor": 7,
+    "prescricaoAtividade": true
+  }
+}`;
+
+
+
+/*Exercício 6 – Ateliê de Costura
+• Crie um JSON de pedido para um ateliê de costura, contendo: dados do cliente 
+(nome e telefone), tipo de peça (ex.: vestido, camisa), medidas (busto, cintura, 
+quadril em cm), tecido escolhido, prazo em dias e status do pedido (valores 
+possíveis: “recebido”, “em produção”, “pronto”, “entregue”). Inclua pelo menos três 
+medidas dentro de um objeto*/
+
+let dadosCliente = `{
+  "cliente": {
+    "nome": "Francisca",
+    "telefone": "11912345678"
+  },
+  "tipoPeca": "Vestido",
+  "medidas": {
+    "busto": 55,
+    "cintura": 46,
+    "quadril": 65
+  },
+  "tecido": "Algodão",
+  "prazoDias": 4,
+  "status": "em produção"
+}`;
+
 
 /* Exercício 7 – Bolo de Pote
 • Crie um JSON de catálogo com três sabores de bolo de pote, onde cada item 
@@ -95,7 +139,60 @@ estejam bem aninhados e que os tipos sejam coerentes */
 
 
 let pedidoOnline = `{
-    "identificadorDePedido": 002,
-    "dataDoPedido": 20/03/2026,
-    "cliente: 
-}`
+  "identificadorDePedido": 2,
+  "dataDoPedido": "2026-03-20",
+  "cliente": {
+    "nome": "Victor",
+    "email": "victor@gmail.com"
+  },
+  "itens": [
+    {
+      "produto": "bolo de chocolate grande",
+      "quantidade": 4,
+      "observacoes": "Chocolate Amargo"
+    }
+  ],
+  "enderecoEntrega": {
+    "rua": "Av Brasil",
+    "numero": 1234,
+    "bairro": "Jardins",
+    "cidade": "São Paulo",
+    "cep": "00000-000"
+  },
+  "formaPagamento": "pix",
+  "totalCalculado": 100
+}`;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
