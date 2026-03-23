@@ -1,3 +1,50 @@
+//Questão 1 psicólogo
+ 
+function avaliarSessao(nomePaciente, quantidadeSessoes) {
+    // Mostra o nome do paciente no console
+    console.log("Nome do paciente:", nomePaciente);
+ 
+    // Verifica se o número de sessões é maior ou igual a 10
+    if (quantidadeSessoes >= 10) {
+        return true; // Pode receber alta
+    } else {
+        return false; // Ainda não pode receber alta
+    }
+}
+ 
+// Exemplos de uso:
+console.log(avaliarSessao("João", 12)); // true
+console.log(avaliarSessao("Maria", 8)); // false
+ 
+/* o que esse código faz
+ 
+O que esse código faz:
+Cria a função avaliarSessao com dois parâmetros: nomePaciente e quantidadeSessoes.
+ 
+Exibe o nome do paciente no console.
+ 
+Usa uma condição (if) para verificar se o paciente já completou 10 ou mais sessões.
+ 
+Retorna true se pode receber alta, ou false caso contrário.
+ 
+É reutilizável: você pode chamar a função com diferentes pacientes e números de sessões.*/
+ 
+//Questão 2
+ 
+function avaliarSessao(nomePaciente, quantidadeSessoes) {
+    if (quantidadeSessoes >= 10) {
+        return `Paciente ${nomePaciente} pode receber alta.`;
+    } else if (quantidadeSessoes >= 5) {
+        return `Paciente ${nomePaciente} está em tratamento contínuo.`;
+    } else {
+        return `Paciente ${nomePaciente} está no início do tratamento.`;
+    }
+}
+ 
+console.log(avaliarSessao("Maria", 10));
+
+
+
 /*  Exercício 3 – Ateliê
 Crie uma função chamada listarMateriais que receba um array de materiais utilizados em um 
 ateliê (ex: tintas, pincéis, tecidos).
@@ -162,37 +209,3 @@ let pedidoOnline = `{
   "formaPagamento": "pix",
   "totalCalculado": 100
 }`;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
